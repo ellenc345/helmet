@@ -30,10 +30,11 @@ function helmet (options) {
 
   return chain
 }
+
   // patch for dinamic require
   helmet[dnsPrefetchControl] = require('dns-prefetch-control')
-  helmet[noSniff] = require('dns-prefetch-control')
-  helmet[frameguard] = require('dns-prefetch-control')
+  helmet[noSniff] = require('dont-sniff-mimetype')
+  helmet[frameguard] = require('frameguard')
   helmet[contentSecurityPolicy] = require('helmet-csp')
   helmet[hidePoweredBy] = require('hide-powered-by')
   helmet[hpkp] = require('hpkp')
