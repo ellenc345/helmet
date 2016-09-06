@@ -45,15 +45,15 @@ function helmet (options) {
 
 
   
-  helmet[dnsPrefetchControl] = dnsPrefetchControl
-  helmet[noSniff] = noSniff
-  helmet[frameguard] = frameguard
-  helmet[contentSecurityPolicy] = contentSecurityPolicy
-  helmet[hidePoweredBy] = hidePoweredBy
-  helmet[hpkp] = hpkp
-  helmet[hsts] = hsts
-  helmet[ieNoOpen] = ieNoOpen
-  helmet[noCache] = noCache
-  helmet[xssFilter] = xssFilter
+  helmet['dnsPrefetchControl'] = dnsPrefetchControl
+  helmet['noSniff'] = noSniff
+  helmet['frameguard'] = frameguard
+  helmet['contentSecurityPolicy'] = contentSecurityPolicy
+  helmet['hidePoweredBy'] = hidePoweredBy
+  helmet['hpkp'] = hpkp
+  helmet['hsts'] = hsts
+  helmet['ieNoOpen'] = ieNoOpen
+  helmet['noCache'] = noCache
+  helmet['xssFilter'] = xssFilter
   
 module.exports = helmet
