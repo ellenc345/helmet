@@ -32,14 +32,28 @@ function helmet (options) {
 }
 
   // patch for dinamic require
-  helmet[dnsPrefetchControl] = require('dns-prefetch-control')
-  helmet[noSniff] = require('dont-sniff-mimetype')
-  helmet[frameguard] = require('frameguard')
-  helmet[contentSecurityPolicy] = require('helmet-csp')
-  helmet[hidePoweredBy] = require('hide-powered-by')
-  helmet[hpkp] = require('hpkp')
-  helmet[hsts] = require('hsts')
-  helmet[ieNoOpen] = require('ienoopen')
-  helmet[noCache] = require('nocache')
-  helmet[xssFilter] = require('x-xss-protection')
+  const dnsPrefetchControl = require('dns-prefetch-control')
+  const noSniff = require('dont-sniff-mimetype')
+  const frameguard = require('frameguard')
+  const contentSecurityPolicy = require('helmet-csp')
+  const hidePoweredBy = require('hide-powered-by')
+  const hpkp = require('hpkp')
+  const hsts =require('hsts')
+  const ieNoOpen = require('ienoopen')
+  const noCache =require('nocache')
+  const xssFilter = require('x-xss-protection')
+
+
+  
+  helmet[dnsPrefetchControl] = dnsPrefetchControl
+  helmet[noSniff] = noSniff
+  helmet[frameguard] = frameguard
+  helmet[contentSecurityPolicy] = contentSecurityPolicy
+  helmet[hidePoweredBy] = hidePoweredBy
+  helmet[hpkp] = hpkp
+  helmet[hsts] = hsts
+  helmet[ieNoOpen] = ieNoOpen
+  helmet[noCache] = noCache
+  helmet[xssFilter] = xssFilter
+  
 module.exports = helmet
